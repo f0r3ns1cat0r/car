@@ -1,0 +1,31 @@
+---
+title: Disabling Security Tools - Sysmon
+submission_date: 2020/05/04
+information_domain: 'Host'
+platforms:
+  - Windows
+subtypes:
+  - Other
+analytic_types:
+  - TTP
+contributors:
+  - MITRE
+id: CAR-2020-05-002
+description: |-
+  Description text goes here
+coverage:
+  - technique: T1562
+    tactics:
+      - TA0005
+    subtechniques:
+      - T1562.001
+    coverage: Low
+implementations:
+  - name: Sysmon Change Events
+    description: This Splunk query looks for various events around changes to the Sysmon driver or configuration.
+    code: |-
+      index=__your_sysmon_index__ SysmonDrv OR EventCode=16 OR EventCode=4
+    type: Splunk
+    data_model: Sysmon native
+unit_tests: 
+  - description: |-
