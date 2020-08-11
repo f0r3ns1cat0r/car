@@ -79,7 +79,7 @@ index=__your_sysmon_index__ EventCode=10 TargetImage="C:\\WINDOWS\\system32\\lsa
 #### Procdump - Process Access (Sigma)
 
 
-A [Sigma Version](https://github.com/Neo23x0/sigma/blob/master/rules/windows/sysmon/sysmon_lsass_memdump.yml) of the above Splunk search, with some more stringent criteria around calltrace.
+A [Sigma Version](https://github.com/Neo23x0/sigma/blob/master/rules/windows/process_access/sysmon_lsass_memdump.yml) of the above Splunk search, with some more stringent criteria around calltrace.
 
 
 
