@@ -52,7 +52,7 @@ implementations:
     type: Splunk
     data_model: Sysmon native
   - name: Procdump - Process Access
-    description: 'A [Sigma Version](https://github.com/Neo23x0/sigma/blob/master/rules/windows/sysmon/sysmon_lsass_memdump.yml) of the above Splunk search, with some more stringent criteria around calltrace.'
+    description: 'A [Sigma Version](https://github.com/Neo23x0/sigma/blob/master/rules/windows/process_access/sysmon_lsass_memdump.yml) of the above Splunk search, with some more stringent criteria around calltrace.'
     type: Sigma
 data_model_references:
   - process/create/exe
