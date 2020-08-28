@@ -40,7 +40,7 @@ fields:
   - name: signer
     description: The name of the organization which signed the module.
     example: Microsoft Corporation
-  - name: signer
+  - name: tid
     description: The thread ID of the thread responsible for the load or unload event.
     example: 50
 
